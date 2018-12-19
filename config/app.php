@@ -78,7 +78,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    #'locale' => 'en',
+    'locale' => 'cn',
 
     /*
     |--------------------------------------------------------------------------
@@ -164,6 +165,9 @@ return [
 
         //ide
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        //调试
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 

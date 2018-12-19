@@ -130,3 +130,11 @@ Route::get('json',function ()
 //视图
 Route::get('view','HtmlController@index');
 Route::get('inc','HtmlController@inc');
+
+//添加用户
+Route::get('useradd','UserController@index')->name('useradd');
+Route::post('add','UserController@addSave')->name('user.add');
+
+//DB操作原生sql
+Route::get('db','MydbController@db')->name('my.db');
+Route::get('db2','MydbController@db2')->name('my.db');
